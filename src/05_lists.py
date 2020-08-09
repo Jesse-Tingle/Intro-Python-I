@@ -64,7 +64,8 @@ z = [
 # num = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 my_new_list = []
 for i in z:
-    print(i * 1000)
+    my_new_list.append(i)
+
     for n in i:
         print(n * 1000)
 
