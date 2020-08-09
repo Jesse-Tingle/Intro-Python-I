@@ -25,7 +25,8 @@ print(cubes)
 # Write a list comprehension that utilizes slicing syntax to product
 # a list with the elements from the first half of the `cubes` list
 
-first_half_of_cubes = []
+
+first_half_of_cubes = [cubes[0:5]]
 
 print(first_half_of_cubes)
 
@@ -41,10 +42,10 @@ print("uppercase: ", uppercase)
 # Use a list comprehension to create a list containing only the _even_ elements
 # the user entered into list x.
 
-x = raw_input("Enter comma-separated numbers: ").split(',')
+x = input("Enter comma-separated numbers: ").split(',')
 
 # What do you need between the square brackets to make it work?
 y = [int(i) for i in x if int(i) % 2 == 0]
 
 
-print(y)
+print("y: ", y)
