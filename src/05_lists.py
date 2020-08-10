@@ -9,41 +9,37 @@ y = [8, 9, 10]
 # Change x so that it is [1, 2, 3, 4]
 # YOUR CODE HERE
 
-# x.append(4)
-# print(x)
+x.append(4)
+print(x)
 
 # Using y, change x so that it is [1, 2, 3, 4, 8, 9, 10]
 # YOUR CODE HERE
 
-# x = x + y
-# print(x)
+x = x + y
+print(x)
 
 # Change x so that it is [1, 2, 3, 4, 9, 10]
 # YOUR CODE HERE
 
-# x.append(4)
-# x = x + y
-# for num in x:
-#     if num == 8:
-#         x.remove(num)
-# print(x)
+for num in x:
+    if num == 8:
+        x.remove(num)
+print(x)
 
 # Change x so that it is [1, 2, 3, 4, 9, 99, 10]
 # YOUR CODE HERE
 
-# x.append(4)
-# x = x + y
-# for num in x:
-#     if num == 8:
-#         x.remove(num)
+for num in x:
+    if num == 8:
+        x.remove(num)
 
-# x.insert(5, 99)
+x.insert(5, 99)
 
-# print(x)
+print(x)
 
 # Print the length of list x
 # YOUR CODE HERE
-# print(len(x))
+print(len(x))
 
 # Print all the values in x multiplied by 1000
 # YOUR CODE HERE
@@ -72,8 +68,15 @@ for i in z:
 
 # Print the first element from each nested list in the matrix z
 # YOUR CODE HERE
+def Extract(lst):
+    return list(list(zip(*lst))[0])
+
+
+print("first element: ", Extract(z))
 
 
 # Print all of the elements that lie on the left-to-right
 # diagonal of matrix z
 # YOUR CODE HERE
+diagonals = [z[i][i] for i in range(len(z))]
+print("diagonals: ", diagonals)
