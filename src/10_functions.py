@@ -17,10 +17,3 @@ if is_even(num) == True:
     print("Even!")
 else:
     print("Odd!")
-
-
-# Read a string from the keyboard
-s = input("Enter some characters: ")
-
-# Write a function that reverses the input string s
-# YOUR CODE HERE
